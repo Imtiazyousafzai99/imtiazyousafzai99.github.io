@@ -3,114 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engr. M. Imtiaz | Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background-color: #0073e6;
-            color: white;
-            padding: 20px 10%;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #0073e6;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 20px 10%;
-            margin: 20px auto;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        section h2 {
-            color: #0073e6;
-        }
-        .skills, .employment {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-        .skills div, .employment div {
-            flex: 1 1 calc(50% - 30px);
-            margin-bottom: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #0073e6;
-            color: white;
-        }
-        #blog {
-            margin: 20px auto;
-        }
-        .comment {
-            margin-bottom: 10px;
-            padding: 10px;
-            background: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .comment h4 {
-            margin: 0 0 5px;
-            color: #0073e6;
-        }
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-    </style>
-    <script>
-        function addComment() {
-            const commentsSection = document.getElementById('comments');
-            const commentInput = document.getElementById('comment-input');
-            const commentText = commentInput.value.trim();
-
-            if (commentText) {
-                const newComment = document.createElement('div');
-                newComment.classList.add('comment');
-                newComment.innerHTML = `<h4>New Comment:</h4><p>${commentText}</p>`;
-                commentsSection.appendChild(newComment);
-                commentInput.value = '';
-            } else {
-                alert('Please enter a comment before submitting.');
-            }
-        }
-
-        function openTab(tabId) {
-            const tabs = document.querySelectorAll('.tab-content');
-            tabs.forEach(tab => tab.classList.remove('active'));
-
-            document.getElementById(tabId).classList.add('active');
-        }
-    </script>
+    <title>Engr. M. IXXXXXX | Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
 </head>
 <body>
     <header>
-        <h1>Engr. M. Imtiaz Alam</h1>
+        <h1>Engr. M. IXXXXXX</h1>
         <p>Tokyo, Japan</p>
         <p>
-            <a href="https://www.linkedin.com/in/imtiazalam99" target="_blank" style="color: white;">LinkedIn</a> |
-            080-81590448 | <a href="mailto:imtiazalam99@gmail.com" style="color: white;">imtiazalam99@gmail.com</a>
+            <a href="https://linkedin.com/XXXX" target="_blank" style="color: white;">LinkedIn</a> |
+            080-8159XXXX48 | <a href="mailto:imtiaXXXXX@gmail.com" style="color: white;">imtiaXXXXX@gmail.com</a>
         </p>
     </header>
 
@@ -124,7 +26,7 @@
         <a href="#achievements">Achievements</a>
         <a href="#hobbies">Hobbies</a>
         <a href="#blog">Blog</a>
-        <a href="#Games">Games</a>
+        <a href="#dragon">Running Dragon</a>
     </nav>
 
     <section id="summary">
@@ -211,7 +113,7 @@
         <h2>Blog Comments</h2>
         <div id="comments">
             <div class="comment">
-                <h4>User:</h4>
+                <h4>User Comment:</h4>
                 <p>This is an example of a comment. Feel free to share your thoughts!</p>
             </div>
         </div>
@@ -219,18 +121,18 @@
         <button onclick="addComment()">Add Comment</button>
     </section>
 
-    <section id="Games">
-        <h2>Games</h2>
-        <h4>Running Dragon</h4>
+    <section id="dragon">
+        <h2>Running Dragon</h2>
         <div id="dragon-tab" class="tab-content active">
-            <p>Sorry for the inconvenience the game the taken down because of bugs i will update this section shortly &#128517; &#33;</p>
+            <p>Dragon animation will appear here!</p>
+            <!-- Placeholder for Dragon Animation -->
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Engr. M. Imtiaz Alam</p>
+        <p>&copy; 2024 Engr. M. IXXXXXX | Designed by ChatGPT</p>
     </footer>
-   
-    </script>
+
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
 </body>
 </html>

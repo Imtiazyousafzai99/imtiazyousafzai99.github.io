@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px 10%;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+nav {
+    text-align: center;
+    padding: 10px 0;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #0073e6;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+section {
+    padding: 20px 10%;
+    margin: 20px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+section h2 {
+    color: #0073e6;
+}
+.skills, .employment {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.skills div, .employment div {
+    flex: 1 1 calc(50% - 30px);
+    margin-bottom: 10px;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0073e6;
+    color: white;
+}
+#blog {
+    margin: 20px auto;
+}
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.comment h4 {
+    margin: 0 0 5px;
+    color: #0073e6;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
