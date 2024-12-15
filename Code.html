@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engr. M. Imtiaz | Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px 10%;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0073e6;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px 10%;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            color: #0073e6;
+        }
+        .skills, .employment {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .skills div, .employment div {
+            flex: 1 1 calc(50% - 30px);
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #0073e6;
+            color: white;
+        }
+        #blog {
+            margin: 20px auto;
+        }
+        .comment {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .comment h4 {
+            margin: 0 0 5px;
+            color: #0073e6;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function addComment() {
+            const commentsSection = document.getElementById('comments');
+            const commentInput = document.getElementById('comment-input');
+            const commentText = commentInput.value.trim();
+
+            if (commentText) {
+                const newComment = document.createElement('div');
+                newComment.classList.add('comment');
+                newComment.innerHTML = `<h4>New Comment:</h4><p>${commentText}</p>`;
+                commentsSection.appendChild(newComment);
+                commentInput.value = '';
+            } else {
+                alert('Please enter a comment before submitting.');
+            }
+        }
+
+        function openTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Engr. M. Imtiaz Alam</h1>
+        <p>Tokyo, Japan</p>
+        <p>
+            <a href="https://www.linkedin.com/in/imtiazalam99" target="_blank" style="color: white;">LinkedIn</a> |
+            080-81590448 | <a href="mailto:imtiazalam99@gmail.com" style="color: white;">imtiazalam99@gmail.com</a>
+        </p>
+    </header>
+
+    <nav>
+        <a href="#summary">Summary</a>
+        <a href="#skills">Skills</a>
+        <a href="#employment">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#blog">Blog</a>
+        <a href="#Games">Games</a>
+    </nav>
+
+    <section id="summary">
+        <h2>Summary</h2>
+        <p>
+            Dedicated and results-oriented professional with a strong background in engineering and extensive experience in ensuring the quality and reliability of software/hardware applications and field testing. Proven track record in managing QA efforts, leading cross-functional teams, and implementing innovative testing strategies.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div><strong>Programming Languages:</strong> Expert in C/C++, Python, Java, SQL; familiar with Linux OS.</div>
+            <div><strong>Quality Assurance:</strong> Proficient in Atlassian JIRA, Git, Selenium, Appium.</div>
+            <div><strong>Field Testing:</strong> Hands-on experience with TEMS, IBflex Lite, Seagull, Xcal MO.</div>
+            <div><strong>DevOps:</strong> LINUX, Kubernetes, Docker.</div>
+        </div>
+    </section>
+
+    <section id="employment">
+        <h2>Experience</h2>
+        <div class="employment">
+            <div>
+                <strong>QA Engineer / Field Test Engineer</strong><br>
+                Mavenir / Airitz (RCS Solution) | Tokyo, Japan | 01/03/2020 - 01/05/2023
+                <ul>
+                    <li>Comprehensive regression testing for RCS applications on Android and iOS platforms.</li>
+                    <li>Improved bug reporting efficiency by 20%.</li>
+                    <li>Implemented automation strategies increasing efficiency by 30%.</li>
+                </ul>
+            </div>
+            <div>
+                <strong>DT Engineer / Field Test Engineer</strong><br>
+                Avinton / Nokia Japan | Tokyo, Japan | 25/06/2019 - 31/12/2019
+                <ul>
+                    <li>Reduced customer-reported issues by 35% in the Nokia Rakuten Green Field Project.</li>
+                    <li>Conducted comprehensive network monitoring and optimization.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Industrial Projects</h2>
+        <ul>
+            <li><strong>Health Monitoring Wearable:</strong> Designed ARM Cortex-M microcontroller-based wearable device with sensor integration and BLE communication (2021-2022).</li>
+            <li><strong>Induction Furnace:</strong> Small-scale 25kW furnace design for industries (2018-2019).</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Bachelor of Science in Telecom Engineering:</strong> FURC University Isb, 2014.</li>
+            <li><strong>Diploma of Associate Engineering in Telecom:</strong> PSIT Islamabad, 2009.</li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h2>Published Articles</h2>
+        <ul>
+            <li><a href="https://fui.edu.pk/" target="_blank">A comprehensive analysis of adaptive image restoration techniques...</a></li>
+            <li><a href="https://icaeta.aiplustech.org/" target="_blank">Joint User Selection and Base Station Assignment Strategy...</a></li>
+        </ul>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Winner of "Best FYP" award at university.</li>
+            <li>"Best Robot Design" in 2013.</li>
+        </ul>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Programming and building small robots.</li>
+            <li>Software debugging and designing circuits.</li>
+        </ul>
+    </section>
+
+    <section id="blog">
+        <h2>Blog Comments</h2>
+        <div id="comments">
+            <div class="comment">
+                <h4>User:</h4>
+                <p>This is an example of a comment. Feel free to share your thoughts!</p>
+            </div>
+        </div>
+        <textarea id="comment-input" placeholder="Write your comment here..." style="width: 100%; height: 50px; margin-top: 10px;"></textarea>
+        <button onclick="addComment()">Add Comment</button>
+    </section>
+
+    <section id="Games">
+        <h2>Games</h2>
+        <h4>Running Dragon</h4>
+        <div id="dragon-tab" class="tab-content active">
+            <p>Sorry for the inconvenience the game the taken down because of bugs i will update this section shortly &#128517; &#33;</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Engr. M. Imtiaz Alam</p>
+    </footer>
+   
+    </script>
+</body>
+</html>
